@@ -26,6 +26,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.nictes1.vacunatear.ui.theme.VacunateARTheme
+import com.nictes1.vacunatear.ui.theme.login.ui.LoginScreen
+import com.nictes1.vacunatear.ui.theme.login.ui.LoginViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +39,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                    LoginScreen(LoginViewModel())
                 }
             }
         }
